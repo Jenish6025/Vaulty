@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardclick"
+        android:layout_width="220dp"
+        android:layout_height="360dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/pack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@drawable/package1">
+
+        </ImageView>
+
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/pack_check"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="170dp"
+            android:background="@drawable/package1"
+            >
+
+        </ImageView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/package_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/hindsiliguriregular"
+                android:gravity="center"
+                android:text="Golden"
+                android:textColor="@color/white"
+                android:textSize="22dp">
+
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_marginBottom="130dp"
+                    android:id="@+id/packicon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="40dp"
+                    android:padding="45dp"
+                    android:src="@drawable/tea">
+
+                </ImageView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/hindsiliguriregular"
+                    android:gravity="center"
+                    android:text="Remove ADs \n Complete Drive Full Access \n Uninstall Protection Enable \n Future Update"
+                    android:layout_marginTop="190dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </RelativeLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <TextView
+                   android:id="@+id/package_duration"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="290dp"
+                   android:fontFamily="@font/hindsiliguriregular"
+                   android:gravity="center"
+                   android:text="1 Month"
+                   android:textStyle="bold"
+                   android:textColor="@color/black">
+
+               </TextView>
+
+               <TextView
+                   android:textStyle="bold"
+                   android:id="@+id/package_amount"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="120dp"
+                   android:layout_marginTop="320dp"
+                   android:fontFamily="@font/hindsiliguriregular"
+                   android:gravity="center"
+                   android:text="6999/-"
+                   android:textColor="@color/black"
+                   android:textSize="17dp">
+
+               </TextView>
+
+           </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

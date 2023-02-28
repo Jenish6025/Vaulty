@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".primium">
+
+  <!--  <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>-->
+    <LinearLayout
+        android:id="@+id/primiumm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <include layout="@layout/activity_private_primium"></include>
+
+    </LinearLayout>
+  <RelativeLayout
+      android:gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="visible"
+        app:indicatorName="BallPulseIndicator"
+        app:indicatorColor="@color/mainpink"
+        />
+
+  </RelativeLayout>
+
+  <LinearLayout
+      android:layout_marginTop="150dp"
+      android:layout_below="@id/primiumm"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <com.yarolegovich.discretescrollview.DiscreteScrollView
+        android:id="@+id/recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        app:dsv_orientation="horizontal"></com.yarolegovich.discretescrollview.DiscreteScrollView>
+
+  </LinearLayout>
+
+
+</RelativeLayout>

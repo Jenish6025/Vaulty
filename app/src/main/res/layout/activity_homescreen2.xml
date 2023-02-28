@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".homescreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/AppToolbarStyle"
+            android:visibility="gone">
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawerlayout"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:weightSum="10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_weight="0.2"
+                                    android:padding="5dp">
+
+                                    <ImageView
+                                        android:id="@+id/drawer"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:src="@drawable/threeline"
+                                        android:tint="@color/black"></ImageView>
+                                </LinearLayout>
+
+                                <ScrollView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="5"
+                                    android:scrollbars="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:weightSum="3">
+
+                                        <RelativeLayout
+                                            android:id="@+id/rl_pin_lock"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1">
+
+                                            <ImageView
+                                                android:gravity="center_vertical"
+                                                android:id="@+id/img_pin"
+                                                android:layout_width="40dp"
+                                                android:layout_height="40dp"
+                                                android:padding="5dp"
+                                                android:src="@drawable/ic_dialer">
+
+                                            </ImageView>
+
+                                            <RelativeLayout
+                                                android:id="@+id/img_pin_select"
+                                                android:layout_width="40dp"
+                                                android:layout_height="40dp"
+                                                android:background="#B3000000"
+                                                android:visibility="gone">
+
+                                                <ImageView
+                                                    android:layout_width="15dp"
+                                                    android:layout_height="15dp"
+                                                    android:layout_centerInParent="true"
+                                                    android:src="@drawable/live" />
+
+                                            </RelativeLayout>
+
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_toRightOf="@+id/img_pin"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:fontFamily="@font/hindsiliguriregular"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center_vertical"
+                                                    android:text="Dialer"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="13dp" />
+
+                                                <TextView
+                                                    android:fontFamily="@font/hindsiliguriregular"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center_vertical"
+                                                    android:text="Lock"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="13dp" />
+
+                                            </LinearLayout>
+
+
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:id="@+id/rl_calculator_lock"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal">
+
+                                            <ImageView
+                                                android:gravity="center_vertical"
+                                                android:id="@+id/img_calculator"
+                                                android:layout_width="40dp"
+                                                android:layout_height="40dp"
+                                                android:padding="5dp"
+                                                android:src="@drawable/ic_calcy">
+
+                                            </ImageView>
+                                            <RelativeLayout
+                                                android:id="@+id/img_cal_select"
+                                                android:layout_width="40dp"
+                                                android:layout_height="40dp"
+                                                android:background="#B3000000"
+                                                android:visibility="gone">
+
+                                                <ImageView
+                                                    android:layout_width="15dp"
+                                                    android:layout_height="15dp"
+                                                    android:layout_centerInParent="true"
+                                                    android:src="@drawable/live" />
+
+                                            </RelativeLayout>
+
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_toRightOf="@+id/img_calculator"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:fontFamily="@font/hindsiliguriregular"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center_vertical"
+                                                    android:text="Calcy"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="13dp" />
+
+                                                <TextView
+                                                    android:fontFamily="@font/hindsiliguriregular"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center_vertical"
+                                                    android:text="Lock"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="13dp" />
+
+                                            </LinearLayout>
+
+                                        </RelativeLayout>
+
+                                        <RelativeLayout
+                                            android:id="@+id/rl_pattern_lock"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal">
+
+                                            <ImageView
+                                                android:id="@+id/img_pattern"
+                                                android:layout_width="40dp"
+                                                android:layout_height="40dp"
+                                                android:gravity="center_vertical"
+                                                android:padding="5dp"
+                                                android:src="@drawable/ic_pattern"></ImageView>
+
+                                            <RelativeLayout
+                                                android:id="@+id/img_patt_select"
+                                                android:layout_width="40dp"
+                                                android:layout_height="40dp"
+                                                android:background="#B3000000"
+                                                android:visibility="gone">
+
+                                                <ImageView
+                                                    android:layout_width="15dp"
+                                                    android:layout_height="15dp"
+                                                    android:layout_centerInParent="true"
+                                                    android:src="@drawable/live" />
+
+                                            </RelativeLayout>
+
+
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="5dp"
+                                                android:layout_toRightOf="@+id/img_pattern"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:fontFamily="@font/hindsiliguriregular"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center_vertical"
+                                                    android:text="Pattern"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="13dp" />
+
+                                                <TextView
+                                                    android:fontFamily="@font/hindsiliguriregular"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center_vertical"
+                                                    android:text="Lock"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="13dp" />
+
+                                            </LinearLayout>
+
+                                        </RelativeLayout>
+
+                                    </LinearLayout>
+
+                                </ScrollView>
+
+
+                                <RelativeLayout
+                                    android:id="@+id/rl_premium"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:padding="5dp"
+                                        android:src="@drawable/ic_premium" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_weight="9"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <include layout="@layout/main_content_view"></include>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="310dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="@color/white"
+                android:clickable="true">
+
+                <include layout="@layout/drawer_screen"></include>
+            </RelativeLayout>
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

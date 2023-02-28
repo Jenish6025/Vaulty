@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".changequestion">
+
+    <LinearLayout
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/activity_private_change_question"></include>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/question"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:backgroundTint="@color/mainpink"
+                android:fontFamily="@font/hindsiliguriregular"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+            <EditText
+                android:background="@drawable/dialog_btn"
+                android:textSize="15dp"
+                android:hint="Security Answer"
+                android:fontFamily="@font/hindsiliguriregular"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:backgroundTint="#14E8505B"
+                android:id="@+id/answer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/cancel"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/mainpink"
+                    android:background="@drawable/dialog_btn"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/hindsiliguriregular"
+                    android:textAllCaps="false"
+                    android:text="Cancel"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"/>
+
+                <Button
+                    android:id="@+id/update"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/mainpink"
+                    android:background="@drawable/dialog_btn"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/hindsiliguriregular"
+                    android:textAllCaps="false"
+                    android:text="Update"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

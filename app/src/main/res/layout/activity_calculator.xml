@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calculator">
+
+    <LinearLayout
+        android:layout_margin="30dp"
+        android:paddingTop="30dp"
+        android:id="@+id/spot"
+        android:layout_width="70dp"
+        android:layout_height="70dp">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/clresult"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="bottom"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/cresult"
+                android:padding="10dp"
+                android:textSize="40dp"
+                android:textColor="#ffffff"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/middle"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/clac"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/calc_bhuro"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp">
+
+                            <TextView
+                                android:id="@+id/cac"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:textColor="#000000"
+                                android:text="AC"
+                                android:textStyle="bold"
+                                android:textSize="30dp"
+                                android:fontFamily="@font/hindsiliguriregular"
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/clseven"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/calc_kalo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp">
+
+                            <TextView
+                                android:id="@+id/cseven"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:text="7"
+                                android:textStyle="bold"
+                                android:textSize="30dp"
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/clfour"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/calc_kalo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp">
+
+                            <TextView
+                                android:id="@+id/cfour"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:text="4"
+                                android:textStyle="bold"
+                                android:textSize="30dp"
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/clone"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/calc_kalo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp">
+
+                            <TextView
+                                android:id="@+id/cone"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:text="1"
+                                android:textStyle="bold"
+                                android:textSize="30dp"
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/calc_bhuro"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp">
+
+                            <TextView
+                                android:id="@+id/minusValue"
+                                android:gravity="center"
+                                android:textColor="#000000"
+                                android:text="*/-"
+                                android:textStyle="bold"
+                                android:textSize="30dp"
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/cleight"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/calc_kalo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp">
+
+                            <TextView
+                                android:id="@+id/ceight"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:text="8"
+                                android:textStyle="bold"
+                                android:textSize="30dp"
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/clfive"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/calc_kalo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp">
+
+                            <TextView
+                                android:id="@+id/cfive"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:text="5"
+                                android:textStyle="bold"
+                                android:textSize="30dp"
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/cltwo"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/calc_kalo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp">
+
+                            <TextView
+                                android:id="@+id/ctwo"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:text="2"
+                                android:textStyle="bold"
+                                android:textSize="30dp"
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:id="@+id/lpercentage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/calc_bhuro">
+
+                            <TextView
+                                android:id="@+id/percentage"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:textColor="#000000"
+                                android:text="%"
+                                android:textStyle="bold"
+                                android:textSize="30dp"
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/clnine"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/calc_kalo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp">
+
+                            <TextView
+                                android:id="@+id/cnine"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:text="9"
+                                android:textStyle="bold"
+                                android:textSize="30dp"
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/clsix"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/calc_kalo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp">
+
+                            <TextView
+                                android:id="@+id/csix"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:text="6"
+                                android:textStyle="bold"
+                                android:textSize="30dp"
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/clthree"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/calc_kalo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp">
+
+                            <TextView
+                                android:id="@+id/cthree"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:text="3"
+                                android:textStyle="bold"
+                                android:textSize="30dp"
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:layout_weight="2.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/calc_orange"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp">
+
+                            <TextView
+                                android:id="@+id/div"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:text="÷"
+                                android:textStyle="bold"
+                                android:textSize="30dp"
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lmul"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/calc_orange"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp">
+
+
+                            <TextView
+                                android:id="@+id/mul"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:text="×"
+                                android:textStyle="bold"
+                                android:textSize="30dp"
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/calc_orange"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp">
+
+                            <TextView
+                                android:id="@+id/sub"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:text="-"
+                                android:textStyle="bold"
+                                android:textSize="30dp"
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/calc_orange"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp">
+
+                            <TextView
+                                android:id="@+id/add"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:text="+"
+                                android:textStyle="bold"
+                                android:textSize="30dp"
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/bottom"
+                android:layout_marginBottom="-10dp"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <LinearLayout
+                    android:layout_weight="5.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/clzero"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/calc_zerobutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/czero"
+                            android:padding="10dp"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:text="0"
+                            android:textStyle="bold"
+                            android:textSize="30dp"
+                            android:layout_gravity="center"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_weight="4.9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/cldot"
+                            android:background="@drawable/calc_kalo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp">
+
+                            <TextView
+                                android:id="@+id/cdot"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:text="."
+                                android:textStyle="bold"
+                                android:textSize="30dp"
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_weight="5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:background="@drawable/calc_orange"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp">
+
+                            <TextView
+                                android:id="@+id/equal"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:text="="
+                                android:textStyle="bold"
+                                android:textSize="30dp"
+                                android:layout_gravity="center"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

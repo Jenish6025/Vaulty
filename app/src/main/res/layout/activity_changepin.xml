@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".changepin">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:src="@drawable/wrongpassword"
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+            </ImageView>
+
+        </LinearLayout>
+        <View
+            android:background="@color/mainpink"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </View>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:maxLength="4"
+                android:inputType="number"
+                android:fontFamily="@font/hindsiliguriregular"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/oldpin"
+                android:hint="Old Pin"
+                android:padding="10dp"
+                android:background="@drawable/edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_marginRight="10dp"
+                android:id="@+id/cancel"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/mainpink"
+                android:background="@drawable/dialog_btn"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:fontFamily="@font/hindsiliguriregular"
+                android:textAllCaps="false"
+                android:text="Cancel"
+                android:layout_width="120dp"
+                android:layout_height="50dp"/>
+
+            <Button
+                android:id="@+id/updatepin"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/mainpink"
+                android:background="@drawable/dialog_btn"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:fontFamily="@font/hindsiliguriregular"
+                android:textAllCaps="false"
+                android:text="Submit"
+                android:layout_width="120dp"
+                android:layout_height="50dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

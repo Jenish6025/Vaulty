@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#0d000000">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_back_black" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/hindsiliguriregular"
+            android:gravity="left|center"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:text="Contact Detail"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_devider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/toolbar"
+        android:background="#79000000" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/BannerAdLayout"
+        android:layout_below="@+id/view_devider">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#0d000000"
+                android:paddingBottom="16.0dip">
+
+                <ImageView
+                    android:id="@+id/img_contact_details_contact"
+                    android:layout_width="90.0dip"
+                    android:layout_height="90.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10.0dip"
+                    android:contentDescription="image"
+                    android:src="@drawable/ic_contact_unknown" />
+
+                <TextView
+                    android:id="@+id/txt_contact_details_contact_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_contact_details_contact"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20.0dip"
+                    android:fontFamily="@font/hindsiliguriregular"
+                    android:text="No Name Found"
+                    android:textColor="@color/black"
+                    android:textSize="22.0sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_contact_details_contact_name"
+                    android:layout_marginLeft="30.0dip"
+                    android:layout_marginRight="30.0dip"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/btn_contact_details_message"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0">
+
+                        <ImageView
+                            android:id="@+id/ic_contact_details_message"
+                            android:layout_width="40.0dip"
+                            android:layout_height="40.0dip"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="10.0dip"
+                            android:contentDescription="Message"
+                            android:src="@drawable/ic_calldetails_message" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ic_contact_details_message"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/hindsiliguriregular"
+                            android:text="Message"
+                            android:textSize="10.0sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btn_contact_details_call"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0">
+
+                        <ImageView
+                            android:id="@+id/ic_contact_details_call"
+                            android:layout_width="40.0dip"
+                            android:layout_height="40.0dip"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="10.0dip"
+                            android:contentDescription="Call"
+                            android:src="@drawable/ic_calldetails_call" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ic_contact_details_call"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/hindsiliguriregular"
+                            android:text="Call"
+                            android:textSize="10.0sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btn_contact_details_whatsapp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0">
+
+                        <ImageView
+                            android:id="@+id/ic_contact_details_whatsapp"
+                            android:layout_width="40.0dip"
+                            android:layout_height="40.0dip"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="10.0dip"
+                            android:contentDescription="WhatsApp"
+                            android:src="@drawable/ic_calldetails_whatsapp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ic_contact_details_whatsapp"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/hindsiliguriregular"
+                            android:text="WhatsApp"
+                            android:textSize="10.0sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btn_contact_details_email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0">
+
+                        <ImageView
+                            android:id="@+id/ic_contact_details_email"
+                            android:layout_width="40.0dip"
+                            android:layout_height="40.0dip"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="10.0dip"
+                            android:contentDescription="Email"
+                            android:src="@drawable/ic_calldetails_email" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ic_contact_details_email"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/hindsiliguriregular"
+                            android:text="Email"
+                            android:textSize="10.0sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="left|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_contact_details_contact_numbers"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/hindsiliguriregular"
+                    android:paddingLeft="10dp"
+                    android:text="No Number Found"
+                    android:textColor="@color/black"
+                    android:textSize="22.0sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16.0dip"
+                android:layout_marginBottom="16.0dip">
+
+                <com.facebook.ads.NativeAdLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="vertical"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16.0dip"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#26000000" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_option_send_message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hindsiliguriregular"
+                        android:paddingLeft="16.0dip"
+                        android:paddingTop="8.0dip"
+                        android:paddingRight="16.0dip"
+                        android:paddingBottom="8.0dip"
+                        android:text="Send Message"
+                        android:textColor="@color/permission_color"
+                        android:textSize="18.0sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#26000000" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_option_share_contact"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hindsiliguriregular"
+                        android:paddingLeft="16.0dip"
+                        android:paddingTop="8.0dip"
+                        android:paddingRight="16.0dip"
+                        android:paddingBottom="8.0dip"
+                        android:text="Share Contact"
+                        android:textColor="@color/permission_color"
+                        android:textSize="18.0sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#26000000" />
+
+                <RelativeLayout
+                    android:id="@+id/btn_option_add_favourites"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_option_add_favourites"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/hindsiliguriregular"
+                        android:paddingLeft="16.0dip"
+                        android:paddingTop="8.0dip"
+                        android:paddingRight="16.0dip"
+                        android:paddingBottom="8.0dip"
+                        android:text="Add to Favourite"
+                        android:textColor="@color/permission_color"
+                        android:textSize="18.0sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#26000000" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/BannerAdLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"></RelativeLayout>
+</RelativeLayout>

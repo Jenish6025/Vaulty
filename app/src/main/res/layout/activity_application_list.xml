@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApplicationListAct">
+
+    <LinearLayout
+        android:id="@+id/apps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/activity_private_apps"></include>
+
+    </LinearLayout>
+<!--    <RelativeLayout-->
+<!--        android:gravity="center"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <com.wang.avi.AVLoadingIndicatorView-->
+<!--            android:id="@+id/avi"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            style="@style/AVLoadingIndicatorView"-->
+<!--            android:visibility="visible"-->
+<!--            app:indicatorName="BallPulseIndicator"-->
+<!--            app:indicatorColor="@color/mainpink"-->
+<!--            />-->
+
+<!--    </RelativeLayout>-->
+
+    <LinearLayout
+        android:backgroundTint="@color/mainblue"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/apps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.halfbit.pinnedsection.PinnedSectionListView
+            android:id="@+id/lv"
+            android:backgroundTint="@color/mainblue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" />
+
+    </LinearLayout>
+</RelativeLayout>

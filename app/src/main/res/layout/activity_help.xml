@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".help">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_weight="7"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:src="@drawable/help"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:fontFamily="@font/hindsiliguriregular"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/mainblue"
+                    android:text="Help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textColor="@color/mainblue"
+                    android:textStyle="bold"
+                    android:text="How can I recover lost files?"
+                    android:fontFamily="@font/hindsiliguriregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:fontFamily="@font/hindsiliguriregular"
+                    android:text="In order to protect your private files, all date added to Vaulty are saved and encrypted in your own device.\n If you haven't deleted Vaulty date or change phone, you can use feature 'Find Lost Files' to find them back in Vaulty Setting.\n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textColor="@color/mainblue"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/hindsiliguriregular"
+                    android:layout_marginTop="5dp"
+                    android:text="Why are the pictures still in the album after they have been imported?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:fontFamily="@font/hindsiliguriregular"
+                    android:text="In some phones, there may be a system inside cloud sync service, which can sync your photos or videos to cloud storage automatically, such as in XiaoMi, Samsung, Huawei phones.\nIn general, when you add pictures or videos to the GalleryVault and original files will be deleted automatically by the GalleryVault. But they will be recovered from the phone's cloud service if you have turned on the cloud service and automatically sync.\n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textColor="@color/mainblue"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/hindsiliguriregular"
+                    android:layout_marginTop="5dp"
+                    android:text="How to unhide files?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:fontFamily="@font/hindsiliguriregular"
+                    android:text="Unhide a file: Long-press files and choose the unhide icon\n
+Unhide a folder: Long-press the folder or tap three-point in right low of the folder, choose the unhide icon;\n
+Unhide all: Setting >> Export and Unhide >> Unhide all.\n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:textColor="@color/mainblue"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/hindsiliguriregular"
+                    android:layout_marginTop="5dp"
+                    android:text="How to hide the APP?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:fontFamily="@font/hindsiliguriregular"
+                    android:text="1. Go to setting page;\n2. Choose Hide Icon feature in General Column;\n3. Try to use the methods to open and remember it."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

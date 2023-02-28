@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_main_favorit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A8EEEEEE"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/txt_add_favorit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/hindsiliguriregular"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="#00aaee"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/txt_edit_favorit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="Edit"
+            android:textColor="#00aaee"
+            android:textSize="17dp"
+            android:visibility="gone"></TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:text="Favourites"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:orientation="vertical">//
+
+
+        <View xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#a5a5a5" />
+
+        <GridView
+            android:id="@+id/list_favorite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:numColumns="1"
+            android:scrollbars="none"
+            tools:listitem="@layout/favorit_contact_item" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".History">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/historey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/activity_show_history"></include>
+
+<!--            <LinearLayout-->
+<!--                android:background="@color/mainpink"-->
+<!--                android:padding="10dp"-->
+<!--                android:id="@+id/main"-->
+<!--                android:weightSum="8"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <TextView-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:fontFamily="@font/hindsiliguriregular"-->
+<!--                    android:text="Device ID"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="2"-->
+<!--                    android:textColor="@android:color/white" />-->
+<!--                <TextView-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:fontFamily="@font/hindsiliguriregular"-->
+<!--                    android:text="Total items"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="2"-->
+<!--                    android:textColor="@android:color/white" />-->
+<!--                <TextView-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:fontFamily="@font/hindsiliguriregular"-->
+<!--                    android:text="Type"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="2"-->
+<!--                    android:textColor="@android:color/white" />-->
+<!--                <TextView-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:fontFamily="@font/hindsiliguriregular"-->
+<!--                    android:text="Date"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="2"-->
+<!--                    android:textColor="@android:color/white" />-->
+
+
+<!--            </LinearLayout>-->
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:weightSum="9"
+                    android:background="@color/mainpink"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:text="Total items"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/hindsiliguriregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:id="@+id/totalitem"
+                        android:textColor="@android:color/white" />
+                    <TextView
+                        android:layout_marginRight="50dp"
+                        android:text="Type"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/hindsiliguriregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:id="@+id/type"
+                        android:textColor="@android:color/white" />
+                    <TextView
+                        android:text="Date"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/hindsiliguriregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:id="@+id/hidedate"
+                        android:textColor="@android:color/white" />
+
+                </TableRow>
+
+            </TableLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@id/historey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclehistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+</RelativeLayout>

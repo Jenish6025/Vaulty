@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".question_answer">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="3.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="5dp"
+                android:gravity="center"
+                android:textColor="@color/mainpink"
+                android:textSize="18dp"
+                android:text="Security Question/Answer"
+                android:fontFamily="@font/hindsiliguriregular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginBottom="15dp"
+                android:background="#e1e1e1"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"></LinearLayout>
+
+
+            <TextView
+                android:lineHeight="20dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text="Your data security is prime concern \n of app. Setup security question so \n you can retrive your password any \n time from setting menu."
+                android:fontFamily="@font/hindsiliguriregular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:backgroundTint="@color/mainpink"
+                android:fontFamily="@font/hindsiliguriregular"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+            <EditText
+                android:textSize="15dp"
+                android:hint="Security Answer"
+                android:fontFamily="@font/hindsiliguriregular"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:background="#14E8505B"
+                android:id="@+id/answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center|bottom"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:fontFamily="@font/hindsiliguriregular"
+                android:id="@+id/startnow"
+                android:textColor="#fff"
+                android:background="@color/mainpink"
+                android:padding="5dp"
+                android:text="Set &amp; Save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

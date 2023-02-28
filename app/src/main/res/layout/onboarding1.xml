@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/onboarding1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:weightSum="10"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="4"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:gravity="center|bottom"
+                android:textColor="@color/mainpink"
+                android:fontFamily="@font/hindsiliguriregular"
+                android:text="Secure Your Data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_weight="6"
+                android:textSize="15dp"
+                android:gravity="center|top"
+                android:textColor="#535252"
+                android:lineSpacingExtra="-7dp"
+                android:fontFamily="@font/hindsiliguriregular"
+                android:text="Now you can hide personal data \n like Images,Video,Contacts,Files \n and Apps in your personal space."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
